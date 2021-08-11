@@ -16,11 +16,7 @@ impl KvStore {
     }
 
     pub fn get(&self, key: String) -> Option<String> {
-        if let Some(value) = self.map.get(&key) {
-            Some(value.clone())
-        } else {
-            None
-        }
+        self.map.get(&key).cloned()
     }
 
     pub fn remove(&mut self, key: String) {

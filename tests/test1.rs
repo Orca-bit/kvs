@@ -1,5 +1,5 @@
-use crate::practice1::KvStore;
 use assert_cmd::prelude::*;
+use kvs::practice1::KvStore;
 use predicates::str::contains;
 use std::process::Command;
 
